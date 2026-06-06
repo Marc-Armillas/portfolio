@@ -1,0 +1,96 @@
+---
+import { content, type Locale } from "@lib/content";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = content[locale].contact;
+---
+
+<form class="form-grid" data-contact-form data-locale={locale} action="/api/contact" method="post">
+  <input type="hidden" name="locale" value={locale} />
+  <div class="field">
+    <label for="name">{t.form.name}</label>
+    <input id="name" name="name" autocomplete="name" required />
+  </div>
+
+  <div class="field">
+    <label for="email">{t.form.email}</label>
+    <input id="email" name="email" type="email" autocomplete="email" required />
+  </div>
+
+  <div class="field">
+    <label for="company">{t.form.company}</label>
+    <input id="company" name="company" autocomplete="organization" />
+  </div>
+
+  <div class="field">
+    <label for="budget">{t.form.budget}</label>
+    <select id="budget" name="budget">
+      <option value="">{t.form.budgetPlaceholder}</option>
+      {t.form.budgetOptions.map((option) => <option value={option}>{option}</option>)}
+    </select>
+  </div>
+
+  <div class="field field-full">
+    <label for="message">{t.form.message}</label>
+    <textarea id="message" name="message" minlength="20" required></textarea>
+  </div>
+
+  <div class="field field-full">
+    <button class="button button-primary" type="submit" data-submit-label={t.form.submit} data-sending-label={t.form.sending}>
+      {t.form.submit}
+    </button>
+    <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+  </div>
+</form>
+
+<script is:inline>
+  (() => {
+    const messages = {
+      es: {
+        success: "Gracias. Tu consulta se ha enviado correctamente por email.",
+        error: "No se pudo enviar el mensaje. Intentalo de nuevo.",
+      },
+      en: {
+        success: "Thanks. Your inquiry has been sent by email.",
+        error: "The message could not be sent. Please try again.",
+      },
+    };
+
+    document.querySelectorAll("[data-contact-form]").forEach((form) => {
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const locale = form.dataset.locale || "en";
+        const status = form.querySelector("[data-form-status]");
+        const button = form.querySelector("button[type='submit']");
+        const submitLabel = button.dataset.submitLabel;
+        const sendingLabel = button.dataset.sendingLabel;
+
+        status.textContent = "";
+        button.disabled = true;
+        button.textContent = sendingLabel;
+
+        try {
+          const response = await fetch(form.action, {
+            method: "POST",
+            body: new FormData(form),
+          });
+          const result = await response.json();
+          if (!response.ok || !result.ok) throw new Error(result.error || "send_failed");
+          form.reset();
+          status.className = "form-status is-success";
+          status.textContent = messages[locale].success;
+        } catch (_error) {
+          status.className = "form-status is-error";
+          status.textContent = messages[locale].error;
+        } finally {
+          button.disabled = false;
+          button.textContent = submitLabel;
+        }
+      });
+    });
+  })();
+</script>

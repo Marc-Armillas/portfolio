@@ -1,0 +1,50 @@
+---
+interface Props {
+  study: {
+    title: string;
+    scope: string;
+    system: string;
+    summary: string;
+    responsibilities?: readonly string[];
+    outcome?: string;
+    tags: readonly string[];
+  };
+  detailed?: boolean;
+  responsibilitiesLabel?: string;
+  outcomeLabel?: string;
+}
+
+const { study, detailed = false, responsibilitiesLabel, outcomeLabel } = Astro.props;
+---
+
+<article class="case-card">
+  <header>
+    <div>
+      <p class="eyebrow">{study.scope}</p>
+      {detailed ? <h2>{study.title}</h2> : <h3>{study.title}</h3>}
+    </div>
+    <span class="case-meta">{study.system}</span>
+  </header>
+  <p>{study.summary}</p>
+  {
+    detailed && study.responsibilities && (
+      <>
+        <h3>{responsibilitiesLabel}</h3>
+        <ul class="feature-list">
+          {study.responsibilities.map((item) => <li>{item}</li>)}
+        </ul>
+      </>
+    )
+  }
+  {
+    detailed && study.outcome && (
+      <>
+        <h3>{outcomeLabel}</h3>
+        <p>{study.outcome}</p>
+      </>
+    )
+  }
+  <ul class="tag-list">
+    {study.tags.map((tag) => <li class="tag">{tag}</li>)}
+  </ul>
+</article>

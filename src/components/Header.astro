@@ -1,0 +1,51 @@
+---
+import { content, locales, pathFor, routes, type Locale, type PageKey } from "@lib/content";
+
+interface Props {
+  locale: Locale;
+  page: PageKey;
+}
+
+const { locale, page } = Astro.props;
+const t = content[locale];
+type NavKey = Exclude<PageKey, "home">;
+const navItems: NavKey[] = ["about", "projects", "services", "contact"];
+---
+
+<header class="site-header">
+  <nav class="container nav-shell" aria-label={t.nav.primary}>
+    <a class="brand-mark" href={pathFor(locale, "home")} aria-label="Marc Armillas">
+      <span class="brand-symbol">MA</span>
+      <span>
+        <strong>Marc Armillas</strong>
+        <small>{t.nav.role}</small>
+      </span>
+    </a>
+
+    <div class="nav-links">
+      {
+        navItems.map((item) => (
+          <a class:list={["nav-link", page === item && "is-active"]} href={pathFor(locale, item)}>
+            {t.nav[item]}
+          </a>
+        ))
+      }
+    </div>
+
+    <div class="nav-actions">
+      <div class="locale-switch" aria-label={t.nav.language}>
+        {
+          locales.map((item) => (
+            <a class:list={[locale === item && "is-active"]} href={routes[item][page]}>
+              {item.toUpperCase()}
+            </a>
+          ))
+        }
+      </div>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+        <span data-theme-label>Dark</span>
+      </button>
+      <a class="button button-primary nav-cta" href={pathFor(locale, "contact")}>{t.nav.cta}</a>
+    </div>
+  </nav>
+</header>

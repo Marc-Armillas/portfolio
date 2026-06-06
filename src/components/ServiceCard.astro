@@ -1,0 +1,23 @@
+---
+interface Props {
+  service: {
+    title: string;
+    summary: string;
+    points: readonly string[];
+  };
+  limit?: number;
+  heading?: "h2" | "h3";
+}
+
+const { service, limit, heading = "h3" } = Astro.props;
+const points = typeof limit === "number" ? service.points.slice(0, limit) : service.points;
+const Heading = heading;
+---
+
+<article class="service-card">
+  <Heading>{service.title}</Heading>
+  <p>{service.summary}</p>
+  <ul class="feature-list">
+    {points.map((point) => <li>{point}</li>)}
+  </ul>
+</article>

@@ -1,0 +1,32 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import ContactForm from "@components/ContactForm.astro";
+import { content } from "@lib/content";
+
+const locale = "es";
+const t = content[locale];
+---
+
+<BaseLayout locale={locale} page="contact" title={t.contact.seoTitle} description={t.contact.seoDescription}>
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">{t.contact.eyebrow}</p>
+      <h1>{t.contact.title}</h1>
+      <p>{t.contact.lead}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid-2">
+      <div class="form-shell">
+        <ContactForm locale={locale} />
+      </div>
+
+      <aside class="quote-panel">
+        <p class="eyebrow">{t.contact.fit.eyebrow}</p>
+        <h2>{t.contact.fit.title}</h2>
+        <ul class="feature-list">{t.contact.fit.points.map((point) => <li>{point}</li>)}</ul>
+      </aside>
+    </div>
+  </section>
+</BaseLayout>

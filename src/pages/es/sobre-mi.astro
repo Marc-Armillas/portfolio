@@ -1,0 +1,62 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { content } from "@lib/content";
+
+const locale = "es";
+const t = content[locale];
+---
+
+<BaseLayout locale={locale} page="about" title={t.about.seoTitle} description={t.about.seoDescription}>
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">{t.about.eyebrow}</p>
+      <h1>{t.about.title}</h1>
+      <p>{t.about.lead}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid-2">
+      <div class="quote-panel">
+        <p class="eyebrow">{t.about.profile.eyebrow}</p>
+        <h2>{t.about.profile.title}</h2>
+        <p>{t.about.profile.body}</p>
+      </div>
+      <div class="card">
+        <h2>{t.about.seniorityTitle}</h2>
+        <ul class="feature-list">{t.about.positioning.map((item) => <li>{item}</li>)}</ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section split-band">
+    <div class="container section-header">
+      <div>
+        <p class="eyebrow">{t.about.strengthsEyebrow}</p>
+        <h2>{t.about.strengthsTitle}</h2>
+      </div>
+    </div>
+    <div class="container grid-3">
+      {t.about.strengths.map((strength) => (
+        <article class="card">
+          <h3>{strength.title}</h3>
+          <p>{strength.body}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid-2">
+      <div>
+        <p class="eyebrow">{t.about.focus.eyebrow}</p>
+        <h2>{t.about.focus.title}</h2>
+        <p class="lead">{t.about.focus.body}</p>
+      </div>
+      <div class="card">
+        <h3>{t.about.lowerValueTitle}</h3>
+        <ul class="feature-list">{t.about.lowerValue.map((item) => <li>{item}</li>)}</ul>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

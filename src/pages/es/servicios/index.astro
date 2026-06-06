@@ -1,0 +1,43 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import ServiceCard from "@components/ServiceCard.astro";
+import { content } from "@lib/content";
+
+const locale = "es";
+const t = content[locale];
+---
+
+<BaseLayout locale={locale} page="services" title={t.services.seoTitle} description={t.services.seoDescription}>
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">{t.services.eyebrow}</p>
+      <h1>{t.services.pageTitle}</h1>
+      <p>{t.services.lead}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid-3">
+      {t.servicesList.map((service) => <ServiceCard service={service} heading="h2" />)}
+    </div>
+  </section>
+
+  <section class="section split-band">
+    <div class="container grid-2">
+      <div>
+        <p class="eyebrow">{t.rates.eyebrow}</p>
+        <h2>{t.rates.title}</h2>
+        <p class="lead">{t.rates.lead}</p>
+      </div>
+      <div class="grid-2">
+        {t.rates.items.map((rate) => (
+          <article class="card">
+            <h3>{rate.title}</h3>
+            <p><strong>{rate.range}</strong></p>
+            <p>{rate.body}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

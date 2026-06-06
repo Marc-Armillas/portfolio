@@ -1,0 +1,85 @@
+---
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import { content, type Locale, type PageKey, routes } from "@lib/content";
+import "@styles/global.css";
+
+interface Props {
+  locale: Locale;
+  page: PageKey;
+  title?: string;
+  description?: string;
+}
+
+const { locale, page, title, description } = Astro.props;
+const t = content[locale];
+const pageTitle = title ?? t.seo.defaultTitle;
+const pageDescription = description ?? t.seo.defaultDescription;
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin);
+const alternateEs = routes.es[page];
+const alternateEn = routes.en[page];
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="es" href={alternateEs} />
+    <link rel="alternate" hreflang="en" href={alternateEn} />
+    <link rel="alternate" hreflang="x-default" href={alternateEs} />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <script is:inline>
+      (() => {
+        const stored = localStorage.getItem("theme");
+        const system = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        const theme = stored || system;
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      })();
+    </script>
+  </head>
+  <body>
+    <Header locale={locale} page={page} />
+    <main>
+      <slot />
+    </main>
+    <Footer locale={locale} />
+    <script is:inline>
+      (() => {
+        const buttons = document.querySelectorAll("[data-theme-toggle]");
+        const labels = document.querySelectorAll("[data-theme-label]");
+        const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+        const applyTheme = (theme) => {
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.style.colorScheme = theme;
+          buttons.forEach((button) => button.setAttribute("aria-pressed", String(theme === "dark")));
+          labels.forEach((label) => {
+            label.textContent = theme === "dark" ? "Light" : "Dark";
+          });
+        };
+
+        const storedTheme = () => localStorage.getItem("theme");
+        applyTheme(storedTheme() || (mediaQuery.matches ? "dark" : "light"));
+
+        buttons.forEach((button) => {
+          button.addEventListener("click", () => {
+            const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+            localStorage.setItem("theme", next);
+            applyTheme(next);
+          });
+        });
+
+        mediaQuery.addEventListener("change", () => {
+          if (!storedTheme()) applyTheme(mediaQuery.matches ? "dark" : "light");
+        });
+      })();
+    </script>
+  </body>
+</html>
