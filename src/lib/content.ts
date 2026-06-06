@@ -39,112 +39,112 @@ const esCaseStudies: CaseStudy[] = [
     scope: "Wordans",
     system: "Operaciones ecommerce",
     summary:
-      "Integracion de flujos de datos con proveedores para sincronizacion de catalogo, stock, precios y automatizacion de pedidos en mercados internacionales.",
+      "Integración de flujos de datos con proveedores para sincronización de catálogo, stock, precios y automatización de pedidos en mercados internacionales.",
     responsibilities: [
       "Procesamiento de feeds XML, CSV e integraciones via API.",
-      "Mapeo de productos, stock y precios externos dentro de workflows backend.",
-      "Automatizacion de operaciones repetitivas de importacion y exportacion.",
+      "Mapeo de productos, stock y precios externos dentro de flujos operativos.",
+      "Automatización de operaciones repetitivas de importacion y exportacion.",
       "Mejora de validaciones y tratamiento de excepciones operativas.",
     ],
     outcome:
-      "Reduccion de trabajo manual y mayor consistencia en datos de catalogo, stock y precios usados por equipos ecommerce.",
-    tags: ["Rails", "Suppliers", "XML", "CSV", "REST APIs"],
+      "Reducción de trabajo manual y mayor consistencia en datos de catálogo, stock y precios usados por equipos ecommerce.",
+    tags: ["Suppliers", "XML", "CSV", "REST APIs"],
   },
   {
-    title: "Integraciones logisticas y carriers",
+    title: "Integraciones logísticas y carriers",
     scope: "Wordans",
     system: "Operaciones de envio",
     summary:
       "Desarrollo y mantenimiento de integraciones con carriers internacionales como DPD, UPS, Mondial Relay, Purolator y otros operadores logisticos.",
     responsibilities: [
-      "Tracking de envios y sincronizacion de estados logisticos.",
-      "Integracion de calculo de costes e impresion de etiquetas.",
-      "Conexion de pedidos backend con sistemas externos de transporte.",
-      "Soporte a equipos operativos con mejor visibilidad logistica.",
+      "Tracking de envíos y sincronización de estádos logisticos.",
+      "Integración de cálculo de costes e impresión de etiquetas.",
+      "Conexión de pedidos backend con sistemas externos de transporte.",
+      "Soporte a equipos operativos con mejor visibilidad logística.",
     ],
     outcome:
       "Operaciones ecommerce internacionales con menos pasos manuales y mayor consistencia backend.",
-    tags: ["Rails", "Logistica", "DPD", "UPS", "Tracking"],
+    tags: ["Logística", "DPD", "UPS", "Tracking"],
   },
   {
     title: "Pagos y fiabilidad del checkout",
     scope: "Wordans",
-    system: "Checkout critico para ingresos",
+    system: "Checkout crítico para ingresos",
     summary:
       "Trabajo en integraciones y mantenimiento de sistemas de pago internacionales, incluyendo Stripe, Authorize.net, Apple Pay y Google Pay.",
     responsibilities: [
-      "Implementacion y mantenimiento de integraciones backend de pago.",
-      "Gestion de validaciones, errores y casos limite del checkout.",
+      "Implementación y mantenimiento de integraciones backend de pago.",
+      "Gestión de validaciones, errores y casos límite del checkout.",
       "Mejoras de experiencia de usuario en flujos de pago.",
       "Trabajo con procesos backend sensibles a seguridad.",
     ],
     outcome:
-      "Mayor fiabilidad en flujos de pago que impactan directamente en conversion e ingresos.",
+      "Mayor fiabilidad en flujos de pago que impactan directamente en conversión e ingresos.",
     tags: ["Pagos", "Stripe", "Apple Pay", "Google Pay", "Checkout"],
   },
   {
-    title: "Salesforce y automatizacion comercial",
+    title: "Salesforce y automatización comercial",
     scope: "Wordans",
     system: "Operaciones comerciales",
     summary:
-      "Desarrollo de integraciones Salesforce para creacion de leads, sincronizacion de datos y automatizacion entre sistemas internos y procesos comerciales.",
+      "Desarrollo de integraciones Salesforce para creación de leads, sincronización de datos y automatización entre sístemas internos y procesos comerciales.",
     responsibilities: [
-      "Automatizacion de creacion de leads y flujos comerciales.",
-      "Sincronizacion de datos entre sistemas internos y Salesforce.",
-      "Construccion de workflows para mejorar productividad de ventas.",
-      "Reduccion de traspasos manuales entre sistemas de negocio.",
+      "Automatización de creación de leads y flujos comerciales.",
+      "Sincronización de datos entre sístemas internos y Salesforce.",
+      "Construcción de flujos para mejorar productividad de ventas.",
+      "Reducción de traspasos manuales entre sístemas de negocio.",
     ],
     outcome:
-      "Equipos comerciales con acceso mas rapido a datos mas limpios y menos trabajo repetitivo.",
-    tags: ["Salesforce", "Leads", "Automatizacion", "Rails", "Sales Ops"],
+      "Equipos comerciales con acceso más rápido a datos más limpios y menos trabajo repetitivo.",
+    tags: ["Salesforce", "Leads", "Automatización", "Sales Ops"],
   },
   {
-    title: "Herramientas internas y automatizacion operativa",
+    title: "Herramientas internas y automatización operativa",
     scope: "Wordans",
     system: "Productividad backoffice",
     summary:
-      "Construccion de herramientas internas para ventas, atencion al cliente, operaciones y produccion, centralizando informacion y automatizando trabajo repetitivo.",
+      "Construcción de herramientas internas para ventas, atención al cliente, operaciones y producción, centralizando información y automatizando trabajo repetitivo.",
     responsibilities: [
-      "Creacion de workflows backoffice para varios departamentos.",
-      "Automatizacion de procesamiento masivo de datos y reportes.",
-      "Mejora de visibilidad sobre informacion operativa.",
+      "Creación de flujos de backoffice para varios departamentos.",
+      "Automatización de procesamiento masivo de datos y reportes.",
+      "Mejora de visibilidad sobre información operativa.",
       "Mantenimiento de herramientas usadas en procesos diarios.",
     ],
     outcome:
       "Departamentos con menos esfuerzo manual y datos operativos mas consistentes.",
-    tags: ["Backoffice", "Automatizacion", "Reporting", "Operaciones"],
+    tags: ["Backoffice", "Automatización", "Reporting", "Operaciones"],
   },
   {
     title: "IA aplicada a procesos de negocio",
     scope: "Wordans",
     system: "Operaciones asistidas por IA",
     summary:
-      "Integracion de APIs de IA en procesos reales: generacion de contenido, traduccion multidioma, clasificacion y herramientas internas asistidas.",
+      "Integración de APIs de IA en procesos reales: generación de contenido, traducción multidioma, clasificación y herramientas internas asistidas.",
     responsibilities: [
-      "Conexion de APIs de modelos de lenguaje con workflows operativos existentes.",
-      "Automatizacion de descripciones de producto y traduccion.",
-      "Clasificacion asistida por IA y tooling operativo.",
-      "IA planteada como automatizacion practica, no como investigacion.",
+      "Conexión de APIs de modelos de lenguaje con flujos operativos existentes.",
+      "Automatización de descripciones de producto y traducción.",
+      "Clasificación asistida por IA y tooling operativo.",
+      "IA planteada como automatización práctica, no como investigacion.",
     ],
     outcome:
-      "Mayor capacidad operativa dentro de procesos existentes sin cambiar el posicionamiento tecnico hacia AI Engineer puro.",
-    tags: ["APIs de IA", "Traduccion", "Contenido", "Rails"],
+      "Mayor capacidad operativa dentro de procesos existentes sin cambiar el posicionamiento técnico hacia AI Engineer puro.",
+    tags: ["APIs de IA", "Traducción", "Contenido"],
   },
   {
     title: "Plataforma premium para Arcanmotors",
     scope: "Freelance",
     system: "Entrega completa de producto",
     summary:
-      "Diseno, desarrollo, despliegue y mantenimiento de una plataforma completa para un concesionario de vehiculos premium.",
+      "Diseño, desarrollo, despliegue y mantenimiento de una plataforma completa para un concesionario de vehículos premium.",
     responsibilities: [
-      "Ownership de arquitectura y backend Ruby on Rails.",
-      "Backoffice, gestion de vehiculos y flujos de imagenes.",
-      "SEO tecnico, AWS, Nginx y deployments.",
-      "Comunicacion directa con cliente y evolucion del producto.",
+      "Ownership de arquitectura backend y entrega del producto.",
+      "Backoffice, gestión de vehículos y procesos de imágenes.",
+      "SEO técnico, AWS, Nginx y deployments.",
+      "Comunicación directa con cliente y evolución del producto.",
     ],
     outcome:
-      "Demostracion de ownership freelance end-to-end: arquitectura, implementacion, despliegue en produccion y mantenimiento.",
-    tags: ["Rails", "AWS", "Nginx", "SEO", "Freelance"],
+      "Demostración de ownership freelance end-to-end: arquitectura, implementación, despliegue en producción y mantenimiento.",
+    tags: ["Ruby on Rails", "AWS", "Nginx", "SEO", "Freelance"],
   },
 ];
 
@@ -157,13 +157,13 @@ const enCaseStudies: CaseStudy[] = [
       "Integrated supplier data flows for catalog synchronization, stock updates, pricing and operational order automation across international markets.",
     responsibilities: [
       "Processed XML, CSV and API-based supplier feeds.",
-      "Mapped external product, stock and pricing data into backend workflows.",
+      "Mapped external product, stock and pricing data into operational flows.",
       "Automated repetitive import and export operations.",
       "Improved reliability around data validation and operational exceptions.",
     ],
     outcome:
       "Reduced manual work and improved consistency in catalog, stock and pricing data used by ecommerce teams.",
-    tags: ["Rails", "Suppliers", "XML", "CSV", "REST APIs"],
+    tags: ["Suppliers", "XML", "CSV", "REST APIs"],
   },
   {
     title: "Logistics and carrier integrations",
@@ -179,7 +179,7 @@ const enCaseStudies: CaseStudy[] = [
     ],
     outcome:
       "Helped ecommerce operations manage international shipping flows with fewer manual steps and better backend consistency.",
-    tags: ["Rails", "Logistics", "DPD", "UPS", "Tracking"],
+    tags: ["Logistics", "DPD", "UPS", "Tracking"],
   },
   {
     title: "Payments and checkout reliability",
@@ -194,7 +194,7 @@ const enCaseStudies: CaseStudy[] = [
       "Worked with security-sensitive backend processes.",
     ],
     outcome:
-      "Improved the dependability of payment flows that directly affect conversion and revenue.",
+      "Improved the dependability of payment flows that directly affect conversión and revenue.",
     tags: ["Payments", "Stripe", "Apple Pay", "Google Pay", "Checkout"],
   },
   {
@@ -211,7 +211,7 @@ const enCaseStudies: CaseStudy[] = [
     ],
     outcome:
       "Gave commercial teams faster access to cleaner data and reduced repetitive operational work.",
-    tags: ["Salesforce", "Leads", "Automation", "Rails", "Sales Ops"],
+    tags: ["Salesforce", "Leads", "Automation", "Sales Ops"],
   },
   {
     title: "Internal tools and operational automation",
@@ -239,11 +239,11 @@ const enCaseStudies: CaseStudy[] = [
       "Connected language-model APIs to existing operational workflows.",
       "Automated product description and translation processes.",
       "Added AI-assisted classification and operational tooling.",
-      "Kept AI framed as practical workflow automation.",
+      "Kept AI framed as práctical workflow automation.",
     ],
     outcome:
       "Created AI leverage inside existing operations without repositioning the engineering role as pure AI research.",
-    tags: ["AI APIs", "Translation", "Content", "Rails"],
+    tags: ["AI APIs", "Translation", "Content"],
   },
   {
     title: "Arcanmotors premium vehicle platform",
@@ -252,14 +252,14 @@ const enCaseStudies: CaseStudy[] = [
     summary:
       "Designed, built, deployed and maintained a complete platform for a premium vehicle dealership.",
     responsibilities: [
-      "Owned application architecture and Rails backend development.",
+      "Owned backend architecture and product delivery.",
       "Built the backoffice, vehicle management and image workflows.",
       "Handled technical SEO, AWS, Nginx and deployments.",
       "Communicated directly with the client and evolved the product.",
     ],
     outcome:
       "Demonstrated end-to-end freelance ownership: architecture, implementation, production deployment and maintenance.",
-    tags: ["Rails", "AWS", "Nginx", "SEO", "Freelance"],
+    tags: ["Ruby on Rails", "AWS", "Nginx", "SEO", "Freelance"],
   },
 ];
 
@@ -268,174 +268,174 @@ export const content = {
     seo: {
       defaultTitle: "Marc Armillas | Backend Engineer for Business Systems",
       defaultDescription:
-        "Backend engineer en Barcelona especializado en sistemas criticos de negocio, integraciones API, ecommerce, automatizacion, Salesforce, pagos, logistica e IA aplicada.",
+        "Consultor backend en Barcelona para sistemas críticos de negocio, integraciones, ecommerce, automatización e IA aplicada.",
     },
     nav: {
-      role: "Backend, integraciones y automatizacion",
-      about: "Sobre mi",
+      role: "Backend, integraciones y automatización",
+      about: "Sobre mí",
       projects: "Proyectos",
       services: "Servicios",
       contact: "Contacto",
-      cta: "Agendar una consulta tecnica",
+      cta: "Agendar una consulta técnica",
       language: "Idioma",
       primary: "Navegacion principal",
     },
     footer: {
       eyebrow: "Disponible para proyectos freelance seleccionados",
       title:
-        "Sistemas criticos de negocio, integraciones y automatizacion para equipos que necesitan ejecucion fiable.",
+        "Sistemas críticos de negocio, integraciones y automatización para equipos que necesitan ejecución fiable.",
       body:
         "Basado en Barcelona, trabajando en remoto con empresas europeas, equipos SaaS y negocios ecommerce.",
     },
     home: {
       seoTitle:
-        "Backend Engineer para Sistemas Criticos, Integraciones y Automatizacion | Marc Armillas",
+        "Backend Engineer para Sistemas Críticos, Integraciones y Automatización | Marc Armillas",
       seoDescription:
-        "Contrata a Marc Armillas para construir, conectar y automatizar sistemas criticos de negocio: backend, APIs, ecommerce, Salesforce, pagos, logistica e IA aplicada.",
-      eyebrow: "Backend Engineer para integraciones y automatizacion",
-      title: "Construyo, conecto y automatizo sistemas criticos de negocio.",
+        "Contrata a Marc Armillas para construir, conectar y automatizar sistemas críticos de negocio: backend, APIs, ecommerce, Salesforce, pagos, logística e IA aplicada.",
+      eyebrow: "Backend Engineer para integraciones y automatización",
+      title: "Construyo, conecto y automatizo sistemas críticos de negocio.",
       lead:
-        "Ayudo a empresas SaaS, ecommerce y equipos con operaciones complejas a construir backend fiable, conectar plataformas externas, automatizar workflows operativos e integrar IA donde aporta valor medible.",
+        "Ayudo a equipos SaaS y ecommerce a conectar sistemas, automatizar operaciones y mantener backend crítico funcionando.",
       primaryCta: "Hablar de un proyecto",
-      secondaryCta: "Resolver un problema de integracion",
+      secondaryCta: "Arreglar una integración",
       metricsLabel: "Resumen profesional",
       metrics: [
         {
-          value: "+6 años",
+          value: "+4 años",
           label:
-            "Construyendo software en produccion para entornos criticos de negocio.",
+            "Resolviendo problemas reales en entornos de producción.",
         },
         {
           value: "B2B + B2C",
-          label: "Experiencia en ecommerce internacional con multiples mercados.",
+          label: "Experiencia en ecommerce internacional con múltiples mercados.",
         },
         {
-          value: "Rails first",
+          value: "Stack principal",
           label:
-            "Ruby on Rails como stack principal para backend, integraciones y tooling operativo.",
+            "Ruby on Rails como base para backend fiable y mantenible.",
         },
         {
           value: "IA aplicada",
           label:
-            "Modelos de lenguaje integrados en procesos reales, sin vender humo.",
+            "Modelos de lenguaje integrados en procesos reales con impacto operativo.",
         },
       ] satisfies Metric[],
       wordans: {
         eyebrow: "Experiencia principal",
         title:
-          "Wordans convertido en una cartera de casos de estudio de produccion.",
+          "Más de cuatro años resolviendo problemas reales en ecommerce internacional.",
         body:
-          "Mas de cuatro anos en una plataforma internacional de ecommerce pueden explicarse sin revelar informacion confidencial: suppliers, logistica, checkout, Salesforce, herramientas internas, automatizacion y flujos asistidos por IA.",
+          "Trabajo real en operaciones B2B y B2C: proveedores, logística, checkout, Salesforce, herramientas internas, automatización y flujos asistidos por IA.",
         cta: "Explorar el trabajo",
       },
       conversion: {
-        eyebrow: "Posicionamiento",
+        eyebrow: "Confianza",
         title:
-          "Backend, integraciones y automatizacion para operaciones que no pueden fallar.",
+          "Basado en Barcelona, trabajando con equipos europeos.",
         body:
-          "El objetivo es resolver problemas backend que afectan a negocio: conectar sistemas, reducir trabajo manual, mejorar datos operativos y mantener workflows criticos funcionando en produccion.",
+          "Trabajo en remoto, cómodo con sistemas legacy, flujos críticos y mantenimiento en producción. Puedo avanzar de forma autónoma, con poca supervisión y comunicación clara.",
       },
     },
     about: {
-      seoTitle: "Sobre Marc Armillas | Backend, Integraciones y Automatizacion",
+      seoTitle: "Sobre Marc Armillas | Backend, Integraciones y Automatización",
       seoDescription:
-        "Marc Armillas ayuda a empresas a construir, conectar y automatizar sistemas criticos de negocio con backend, integraciones, ecommerce, Salesforce, pagos, logistica e IA aplicada.",
-      eyebrow: "Sobre mi",
-      title: "Construyo, conecto y automatizo sistemas criticos de negocio.",
+        "Marc Armillas ayuda a empresas a construir, conectar y automatizar sistemas críticos de negocio con backend, integraciones, ecommerce, Salesforce, pagos, logística e IA aplicada.",
+      eyebrow: "Sobre mí",
+      title: "Construyo, conecto y automatizo sistemas críticos de negocio.",
       lead:
-        "Trabajo en la capa donde las operaciones se vuelven software: integraciones API, ecommerce, pagos, logistica, equipos comerciales, automatizacion interna e IA aplicada sobre sistemas backend mantenibles.",
+        "Trabajo donde las operaciones dependen del software: integraciones, ecommerce, pagos, logística, Salesforce, automatización interna e IA aplicada.",
       profile: {
         eyebrow: "Perfil profesional",
-        title: "Backend engineer para empresas con operaciones complejas.",
+        title: "Consultor backend para operaciones complejas.",
         body:
-          "Mi trabajo consiste en entender procesos de negocio, convertirlos en sistemas fiables y conectar las herramientas que equipos de ventas, operaciones, soporte y ecommerce necesitan para trabajar con menos friccion.",
+          "Mi trabajo consiste en entender procesos de negocio, conectar herramientas y entregar soluciónes que reduzcan fricción operativa.",
       },
-      workTitle: "Como trabajo",
+      workTitle: "Cómo trabajo",
       workPoints: [
-        "Empiezo por el proceso de negocio, no por la tecnologia.",
+        "Empiezo por el proceso de negocio, no por la tecnología.",
         "Mapeo sistemas, datos, dependencias y puntos de fallo antes de implementar.",
-        "Construyo soluciones backend mantenibles, observables y preparadas para evolucionar.",
-        "Comunico riesgos, tradeoffs y progreso de forma clara para equipos tecnicos y de negocio.",
+        "Construyo soluciónes mantenibles, observables y preparadas para evolucionar.",
+        "Comunico riesgos, tradeoffs y progreso de forma clara para equipos técnicos y de negocio.",
       ],
       problemsEyebrow: "Problemas que resuelvo",
-      problemsTitle: "Backend, integraciones y automatizacion con impacto operativo",
+      problemsTitle: "Backend, integraciones y automatización con impacto operativo",
       problems: [
         {
-          title: "Sistemas que no se hablan entre si",
+          title: "Sistemas que no se hablan entre sí",
           body:
-            "Conecto APIs, proveedores, Salesforce, pagos, logistica y herramientas internas para reducir trabajo manual y errores operativos.",
+            "Conecto APIs, proveedores, Salesforce, pagos, logística y herramientas internas para reducir trabajo manual y errores operativos.",
         },
         {
           title: "Operaciones ecommerce complejas",
           body:
-            "Ayudo con catalogos, stock, precios, checkout, pedidos, carriers y backoffice en negocios donde la operacion depende del backend.",
+            "Ayudo con catálogos, stock, precios, checkout, pedidos, carriers y backoffice en negocios donde la operación depende del backend.",
         },
         {
           title: "Procesos manuales repetitivos",
           body:
-            "Convierto tareas recurrentes en workflows automatizados, reportes, sincronizaciones y herramientas internas fiables.",
+            "Convierto tareas recurrentes en automatizaciones, reportes, sincronizaciones y herramientas internas fiables.",
         },
         {
           title: "Flujos comerciales en Salesforce",
           body:
-            "Automatizo creacion de leads, sincronizacion de datos y procesos comerciales entre Salesforce y sistemas internos.",
+            "Automatizo creación de leads, sincronización de datos y procesos comerciales entre Salesforce y sistemas internos.",
         },
         {
           title: "IA aplicada a negocio",
           body:
-            "Integro APIs de IA donde aceleran contenido, traduccion, clasificacion o asistencia operativa dentro de procesos existentes.",
+            "Integro APIs de IA donde aceleran contenido, traducción, clasificación o asistencia operativa dentro de procesos existentes.",
         },
         {
-          title: "Aplicaciones Rails en produccion",
+          title: "Backend en producción",
           body:
-            "Ruby on Rails sigue siendo mi stack principal para construir backend robusto, pero el foco es resolver el problema de negocio completo.",
+            "Ruby on Rails es mi stack principal, pero el objetivo es resolver el problema operativo completo.",
         },
       ],
       companies: {
-        eyebrow: "Por que empresas trabajan conmigo",
-        title: "Puedo moverme entre negocio, operaciones y codigo.",
+        eyebrow: "Por qué empresas trabajan conmigo",
+        title: "Puedo moverme entre negocio, operaciones y código.",
         body:
-          "Soy util cuando el problema no es solo desarrollar una pantalla o una feature, sino entender un flujo operativo, conectar varias plataformas, proteger datos criticos y entregar una solucion que el equipo pueda usar en produccion.",
+          "Soy útil cuando el reto exige entender la operación, coordinar varias plataformas, proteger datos críticos y entregar una solución que el equipo pueda usar en producción.",
       },
-      usefulTitle: "Especialmente util para",
+      usefulTitle: "Especialmente útil para",
       usefulPoints: [
-        "Startups SaaS y ecommerce con integraciones pendientes o fragiles.",
-        "Empresas con sistemas legacy que necesitan automatizar sin parar la operacion.",
+        "Startups SaaS y ecommerce con integraciones pendientes o frágiles.",
+        "Empresas con sistemas legacy que necesitan automatizar sin parar la operación.",
         "Equipos que dependen de Salesforce, pagos, carriers, proveedores o herramientas internas.",
-        "Founders, CTOs y ecommerce managers que necesitan ejecucion backend autonoma.",
+        "Founders, CTOs y ecommerce managers que necesitan ejecución autónoma y criterio técnico.",
       ],
     },
     projects: {
       seoTitle:
-        "Casos: Ecommerce, Integraciones, Automatizacion e IA | Marc Armillas",
+        "Casos: Ecommerce, Integraciones, Automatización e IA | Marc Armillas",
       seoDescription:
-        "Casos de estudio confidenciales de Wordans y Arcanmotors sobre ecommerce, suppliers, logistica, pagos, Salesforce, herramientas internas, automatizacion e IA aplicada.",
+        "Casos de estudio confidenciales de Wordans y Arcanmotors sobre ecommerce, suppliers, logística, pagos, Salesforce, herramientas internas, automatización e IA aplicada.",
       eyebrow: "Casos de estudio",
-      title: "Trabajo de produccion convertido en casos de negocio.",
+      title: "Problemas reales convertidos en casos de negocio.",
       lead:
-        "Estos casos explican el tipo de sistemas que construyo manteniendo privados los detalles de implementacion y la informacion confidencial.",
+        "Una muestra de problemas de negocio resueltos en ecommerce, operaciones, pagos, logística, automatización e IA aplicada.",
       responsibilities: "Responsabilidades",
       outcome: "Resultado de negocio",
     },
     services: {
       seoTitle:
-        "Integraciones API, Automatizacion y Backend para Negocio | Marc Armillas",
+        "Integraciones API, Automatización y Backend para Negocio | Marc Armillas",
       seoDescription:
-        "Servicios de backend, integraciones API, ecommerce, Salesforce, pagos, logistica, automatizacion e IA aplicada para operaciones complejas.",
+        "Servicios de backend, integraciones API, ecommerce, Salesforce, pagos, logística, automatización e IA aplicada para operaciones complejas.",
       eyebrow: "Servicios",
       title: "Servicios",
-      pageTitle: "Backend, integraciones y automatizacion para operaciones complejas.",
+      pageTitle: "Backend, integraciones y automatización para operaciones complejas.",
       lead:
-        "Ayuda enfocada para equipos que necesitan conectar sistemas, automatizar procesos, estabilizar operaciones ecommerce y resolver problemas backend con impacto directo en negocio.",
+        "Ayuda práctica para conectar sistemas, automatizar operaciones y estabilizar procesos que afectan a ingresos, datos o productividad.",
     },
     contact: {
-      seoTitle: "Contacto Marc Armillas | Backend, Integraciones y Automatizacion",
+      seoTitle: "Contacto Marc Armillas | Backend, Integraciones y Automatización",
       seoDescription:
-        "Contacta con Marc Armillas para backend, integraciones API, ecommerce, Salesforce, pagos, logistica, automatizacion e IA aplicada.",
+        "Contacta con Marc Armillas para backend, integraciones API, ecommerce, Salesforce, pagos, logística, automatización e IA aplicada.",
       eyebrow: "Contacto",
-      title: "Cuentame que sistema necesitas construir, arreglar o conectar.",
+      title: "Cuéntame qué necesitas construir, arreglar o automatizar.",
       lead:
-        "El primer mensaje mas util incluye objetivo de negocio, stack actual, sistemas implicados, plazo y donde esta bloqueado el proyecto.",
+        "El primer mensaje más útil incluye objetivo de negocio, sistemas implicados, urgencia y dónde está bloqueado el proyecto.",
       form: {
         name: "Nombre",
         email: "Email",
@@ -444,70 +444,68 @@ export const content = {
         budgetPlaceholder: "Selecciona un rango",
         budgetOptions: [
           "Hablar de un proyecto",
-          "Agendar una consulta tecnica",
-          "Automatizar un workflow",
-          "Resolver un problema de integracion",
+          "Agendar una consulta técnica",
+          "Automatizar un flujo de trabajo",
+          "Arreglar una integración",
         ],
         message: "Contexto del proyecto",
         submit: "Enviar consulta",
         sending: "Enviando...",
         success: "Gracias. Tu consulta se ha enviado correctamente por email.",
-        error: "No se pudo enviar el mensaje. Intentalo de nuevo.",
+        error: "No se pudo enviar el mensaje. Inténtalo de nuevo.",
       },
       fit: {
         eyebrow: "Mejor encaje",
-        title: "Proyectos donde puedo aportar mas valor",
+        title: "Proyectos donde puedo aportar más valor",
         points: [
-          "Sistemas backend que necesitan ownership tecnico senior.",
-          "Ecommerce con suppliers, pagos, logistica o complejidad backoffice.",
-          "Empresas que quieren sustituir procesos manuales por automatizacion.",
+          "Sistemas backend que necesitan criterio técnico y ejecución autónoma.",
+          "Ecommerce con suppliers, pagos, logística o complejidad backoffice.",
+          "Empresas que quieren sustituir procesos manuales por automatización.",
           "Equipos que integran Salesforce, APIs externas o procesos asistidos por IA.",
         ],
       },
     },
     stack: {
-      eyebrow: "Stack tecnico",
-      title: "Un stack enfocado para sistemas de negocio mantenibles.",
+      eyebrow: "Stack",
+      title: "Tecnología al servicio de la operación.",
       lead:
-        "Rails sigue siendo el stack principal, dentro de un enfoque mas amplio de backend, datos, integraciones, automatizacion e infraestructura de produccion.",
+        "Trabajo con un stack compacto y probado para construir, conectar y mantener sistemas de negocio en producción.",
       groups: {
-        Backend: ["Ruby", "Ruby on Rails", "Hotwire", "Turbo", "Stimulus"],
-        Datos: ["PostgreSQL", "MySQL", "Elasticsearch", "Redis"],
-        Infraestructura: ["AWS", "Linux", "Nginx", "Docker"],
-        Integraciones: ["REST APIs", "Salesforce", "Stripe", "Apple Pay", "Google Pay", "Carriers"],
-        Automatizacion: ["Selenium", "Procesamiento de datos", "Herramientas internas", "Reporting"],
-        IA: ["APIs de IA", "Generacion de contenido", "Traduccion", "Clasificacion"],
+        Backend: ["Ruby on Rails", "PostgreSQL", "Redis"],
+        Integraciones: ["REST APIs", "Salesforce", "Pagos", "Carriers"],
+        Operaciones: ["Herramientas internas", "Reporting", "Flujos de datos"],
+        "IA aplicada": ["APIs de IA", "Traducción", "Clasificación"],
       },
     },
     rates: {
       eyebrow: "Disponibilidad",
       title: "Disponible para proyectos con alcance claro",
       lead:
-        "Disponible para proyectos freelance acotados, consultoria tecnica y soporte continuo en sistemas backend, integraciones, ecommerce y automatizacion de negocio.",
+        "Disponible para proyectos freelance acotados, consultoría técnica y soporte continuo en sistemas backend, integraciones, ecommerce y automatización.",
       items: [
         {
           title: "Proyectos freelance acotados",
           range: "Alcance definido",
           body:
-            "Integraciones, automatizaciones, herramientas internas o mejoras backend con objetivos y entregables claros.",
+            "Integraciones, automatizaciones o mejoras backend con objetivos y entregables claros.",
         },
         {
-          title: "Agendar una consulta tecnica",
-          range: "Diagnostico y direccion",
+          title: "Agendar una consulta técnica",
+          range: "Diagnóstico y dirección",
           body:
-            "Auditorias, decisiones de arquitectura, viabilidad de integraciones y priorizacion tecnica para equipos de producto u operaciones.",
+            "Auditorías, decisiones de arquitectura, viabilidad de integraciones y priorización técnica para equipos de producto u operaciones.",
         },
         {
-          title: "Automatizar un workflow",
-          range: "Acompanamiento operativo",
+          title: "Automatizar un flujo de trabajo",
+          range: "Acompañamiento operativo",
           body:
-            "Mantenimiento evolutivo, mejoras de fiabilidad y soporte para sistemas que conectan procesos criticos de negocio.",
+            "Mantenimiento evolutivo, mejoras de fiabilidad y soporte para sistemas que conectan procesos críticos de negocio.",
         },
         {
-          title: "Resolver un problema de integracion",
+          title: "Arreglar una integración",
           range: "Problemas concretos",
           body:
-            "Ayuda para desbloquear APIs, Salesforce, pagos, logistica, datos o automatizaciones que afectan a la operacion.",
+            "Ayuda para desbloquear APIs, Salesforce, pagos, logística, datos o automatizaciones que afectan a la operación.",
         },
       ] satisfies Rate[],
     },
@@ -516,38 +514,38 @@ export const content = {
       {
         title: "Integraciones API y sistemas",
         summary:
-          "Conexion limpia de plataformas externas con flujos de datos resilientes y visibilidad operativa.",
-        points: ["REST APIs, pipelines XML y CSV.", "Suppliers, carriers, pagos y Salesforce.", "Errores, reintentos, validaciones y monitorizacion."],
+          "Conexión limpia de plataformas externas con flujos de datos resilientes y visibilidad operativa.",
+        points: ["REST APIs, pipelines XML y CSV.", "Suppliers, carriers, pagos y Salesforce.", "Errores, reintentos, validaciones y monitorización."],
       },
       {
-        title: "Automatizacion de negocio",
+        title: "Automatización de negocio",
         summary:
-          "Conversion de trabajo operativo repetitivo en herramientas, sincronizaciones y procesos fiables.",
-        points: ["Herramientas internas para ventas, soporte y operaciones.", "Procesamiento de datos, reporting y sincronizacion.", "Workflows automatizados para ecommerce y SaaS."],
+          "Automatización de tareas operativas, sincronizaciones y procesos internos fiables.",
+        points: ["Herramientas internas para ventas, soporte y operaciones.", "Procesamiento de datos, reporting y sincronización.", "Flujos automatizados para ecommerce y SaaS."],
       },
       {
-        title: "Ingenieria de sistemas ecommerce",
+        title: "Ingeniería de sistemas ecommerce",
         summary:
-          "Soporte a la mecanica backend que sostiene operaciones ecommerce internacionales.",
-        points: ["Sincronizacion de catalogo, stock y precios.", "Checkout, pagos, pedidos y logistica.", "Herramientas operativas para comercio de volumen."],
+          "Mejora de los flujos que sostienen operaciones ecommerce internacionales.",
+        points: ["Sincronización de catálogo, stock y precios.", "Checkout, pagos, pedidos y logística.", "Herramientas operativas para comercio de volumen."],
       },
       {
-        title: "Automatizacion con IA aplicada",
+        title: "Automatización con IA aplicada",
         summary:
-          "Integracion de IA donde mejora operaciones, contenido, traduccion, clasificacion o asistencia interna.",
-        points: ["APIs de IA dentro de sistemas existentes.", "Generacion de contenido y flujos multidioma.", "Automatizacion asistida con revision humana."],
+          "IA aplicada donde mejora procesos, contenido, traducción, clasificación o asistencia interna.",
+        points: ["APIs de IA dentro de sistemas existentes.", "Generación de contenido y flujos multidioma.", "Automatización asistida con revisión humana."],
       },
       {
         title: "Desarrollo Ruby on Rails",
         summary:
-          "Diseno, construccion y mejora de aplicaciones Rails como stack principal para backend mantenible.",
-        points: ["Nuevas funcionalidades y workflows backend.", "Mantenimiento y modernizacion de Rails legacy.", "Rendimiento, fiabilidad y soporte de produccion."],
+          "Desarrollo y mantenimiento de aplicaciones Ruby on Rails cuando el backend necesita ser fiable y evolucionable.",
+        points: ["Nuevas funcionalidades y flujos backend.", "Mantenimiento y modernización de aplicaciones existentes.", "Rendimiento, fiabilidad y soporte de producción."],
       },
       {
-        title: "Consultoria tecnica",
+        title: "Consultoría técnica",
         summary:
-          "Claridad de arquitectura, plan de entrega y camino de implementacion antes de comprometer recursos.",
-        points: ["Auditorias tecnicas y definicion de roadmap.", "Analisis de viabilidad y riesgos de integracion.", "Ejecucion senior para proyectos freelance acotados."],
+          "Claridad de arquitectura, plan de entrega y camino de implementación antes de comprometer recursos.",
+        points: ["Auditorías técnicas y definición de roadmap.", "Análisis de viabilidad y riesgos de integración.", "Ejecución senior para proyectos freelance acotados."],
       },
     ] satisfies Service[],
   },
@@ -555,7 +553,7 @@ export const content = {
     seo: {
       defaultTitle: "Marc Armillas | Backend Engineer for Business Systems",
       defaultDescription:
-        "Backend engineer in Barcelona specializing in business-critical systems, API integrations, ecommerce operations, automation, Salesforce workflows, payments, logistics and applied AI.",
+        "Backend consultant in Barcelona for business-critical systems, integrations, ecommerce operations, automation and applied AI.",
     },
     nav: {
       role: "Backend, integrations and automation",
@@ -582,41 +580,41 @@ export const content = {
       eyebrow: "Backend Engineer for integrations and automation",
       title: "I build, connect and automate business-critical systems.",
       lead:
-        "I help SaaS, ecommerce and operations-heavy companies build reliable backend systems, connect external platforms, automate operational workflows and apply AI where it creates measurable leverage.",
+        "I help SaaS and ecommerce teams connect systems, automate operations and keep critical backend work running.",
       primaryCta: "Discuss a project",
-      secondaryCta: "Solve an integration problem",
+      secondaryCta: "Fix an integration issue",
       metricsLabel: "Professional highlights",
       metrics: [
         {
           value: "4+ years",
-          label: "Building production software in business-critical environments.",
+          label: "Solving real problems in production environments.",
         },
         {
           value: "B2B + B2C",
           label: "International ecommerce experience across multiple markets.",
         },
         {
-          value: "Rails first",
-          label: "Ruby on Rails as the main stack for backend, integrations and operational tooling.",
+          value: "Main stack",
+          label: "Ruby on Rails as the base for reliable, maintainable backend work.",
         },
         {
           value: "AI applied",
-          label: "Language models integrated into real workflows, not as a standalone title.",
+          label: "Language models integrated into real processes with operational impact.",
         },
       ] satisfies Metric[],
       wordans: {
         eyebrow: "Main experience",
-        title: "Wordans as a portfolio of production case studies.",
+        title: "More than four years solving real ecommerce problems.",
         body:
-          "More than four years working on an international ecommerce platform can be explained without exposing confidential data: supplier integrations, logistics, checkout, Salesforce, internal tools, automation and AI-assisted workflows.",
+          "Real work across B2B and B2C operations: suppliers, logistics, checkout, Salesforce, internal tools, automation and AI-assisted workflows.",
         cta: "Explore the work",
       },
       conversion: {
-        eyebrow: "Positioning",
+        eyebrow: "Trust",
         title:
-          "Backend, integrations and automation for operations that cannot afford to break.",
+          "Based in Barcelona, working with European teams.",
         body:
-          "The goal is to solve backend problems that affect the business: connect systems, reduce manual work, improve operational data and keep critical workflows running in production.",
+          "I work remotely, I am comfortable with legacy systems, business-critical workflows and production maintenance, and I can move independently with low supervisión and clear communication.",
       },
     },
     about: {
@@ -626,18 +624,18 @@ export const content = {
       eyebrow: "About",
       title: "I build, connect and automate business-critical systems.",
       lead:
-        "I work where business operations become software: API integrations, ecommerce, payments, logistics, sales teams, internal automation and applied AI on top of maintainable backend systems.",
+        "I work where operations depend on software: integrations, ecommerce, payments, logistics, Salesforce, internal automation and applied AI.",
       profile: {
         eyebrow: "Professional profile",
-        title: "Backend engineer for operationally complex businesses.",
+        title: "Backend consultant for operationally complex businesses.",
         body:
-          "My work is about understanding business processes, turning them into reliable systems and connecting the tools that sales, operations, support and ecommerce teams need to work with less friction.",
+          "My work is about understanding business processes, connecting tools and delivering solutions that reduce operational friction.",
       },
       workTitle: "How I work",
       workPoints: [
         "I start with the business process, not the technology choice.",
         "I map systems, data, dependencies and failure points before implementation.",
-        "I build maintainable backend solutions that can be observed, operated and evolved.",
+        "I build maintainable solutions that can be observed, operated and evolved.",
         "I communicate risks, tradeoffs and progress clearly across technical and business teams.",
       ],
       problemsEyebrow: "Problems I solve",
@@ -656,7 +654,7 @@ export const content = {
         {
           title: "Repetitive manual processes",
           body:
-            "I turn recurring work into automated workflows, reports, synchronizations and dependable internal tools.",
+            "I turn recurring work into automation, reports, synchronizations and dependable internal tools.",
         },
         {
           title: "Salesforce workflows",
@@ -669,23 +667,23 @@ export const content = {
             "I integrate AI APIs where they accelerate content, translation, classification or assisted operations inside existing workflows.",
         },
         {
-          title: "Rails applications in production",
+          title: "Backend in production",
           body:
-            "Ruby on Rails remains my main technical stack for robust backend work, but the focus is solving the full business problem.",
+            "Ruby on Rails is my main stack, but the goal is solving the full operational problem.",
         },
       ],
       companies: {
         eyebrow: "Why companies work with me",
         title: "I can move between business, operations and code.",
         body:
-          "I am useful when the problem is not just building a screen or feature, but understanding an operational workflow, connecting multiple platforms, protecting critical data and delivering something the team can run in production.",
+          "I am useful when the challenge requires understanding operations, coordinating multiple platforms, protecting critical data and delivering something the team can run in production.",
       },
       usefulTitle: "Especially useful for",
       usefulPoints: [
         "SaaS and ecommerce companies with pending or fragile integrations.",
         "Companies with legacy systems that need automation without stopping operations.",
         "Teams that depend on Salesforce, payments, carriers, suppliers or internal tools.",
-        "Founders, CTOs and ecommerce managers who need autonomous backend execution.",
+        "Founders, CTOs and ecommerce managers who need autonomous execution and technical judgment.",
       ],
     },
     projects: {
@@ -694,9 +692,9 @@ export const content = {
       seoDescription:
         "Confidential case studies from Wordans and Arcanmotors covering ecommerce, supplier integrations, logistics, payments, Salesforce, internal tools, automation and applied AI.",
       eyebrow: "Case studies",
-      title: "Production work translated into business cases.",
+      title: "Real problems translated into business cases.",
       lead:
-        "These case studies explain the type of systems I build while keeping implementation details and confidential business information private.",
+        "A sample of business problems solved across ecommerce, operations, payments, logistics, automation and applied AI.",
       responsibilities: "Responsibilities",
       outcome: "Business outcome",
     },
@@ -708,16 +706,16 @@ export const content = {
       title: "Services",
       pageTitle: "Backend, integrations and automation for complex operations.",
       lead:
-        "Focused help for teams that need to connect systems, automate processes, stabilize ecommerce operations and solve backend problems with direct business impact.",
+        "Practical help connecting systems, automating operations and stabilizing processes that affect revenue, data or productivity.",
     },
     contact: {
       seoTitle: "Contact Marc Armillas | Backend, Integrations and Automation",
       seoDescription:
         "Contact Marc Armillas for backend engineering, API integrations, ecommerce, Salesforce, payments, logistics, automation and applied AI projects.",
       eyebrow: "Contact",
-      title: "Tell me what system needs to be built, fixed or connected.",
+      title: "Tell me what you need to build, fix or automate.",
       lead:
-        "The most useful first message includes the business goal, current stack, systems involved, deadline and where the project is blocked.",
+        "The most useful first message includes the business goal, systems involved, urgency and where the project is blocked.",
       form: {
         name: "Name",
         email: "Email",
@@ -728,7 +726,7 @@ export const content = {
           "Discuss a project",
           "Book a technical consultation",
           "Automate a workflow",
-          "Solve an integration problem",
+          "Fix an integration issue",
         ],
         message: "Project context",
         submit: "Send inquiry",
@@ -740,7 +738,7 @@ export const content = {
         eyebrow: "Best fit",
         title: "Projects where I can create the most value",
         points: [
-          "Backend systems that need senior technical ownership.",
+          "Backend systems that need technical judgment and autonomous execution.",
           "Ecommerce systems with suppliers, payments, logistics or backoffice complexity.",
           "Companies replacing manual workflows with automation.",
           "Teams integrating Salesforce, external APIs or AI-assisted processes.",
@@ -748,30 +746,28 @@ export const content = {
       },
     },
     stack: {
-      eyebrow: "Technical stack",
-      title: "A focused stack for maintainable business systems.",
+      eyebrow: "Stack",
+      title: "Technology in service of the operation.",
       lead:
-        "Rails remains the main technical stack within a broader focus on backend systems, data, integrations, automation and production infrastructure.",
+        "I use a compact, proven stack to build, connect and maintain business systems in production.",
       groups: {
-        Backend: ["Ruby", "Ruby on Rails", "Hotwire", "Turbo", "Stimulus"],
-        Data: ["PostgreSQL", "MySQL", "Elasticsearch", "Redis"],
-        Infrastructure: ["AWS", "Linux", "Nginx", "Docker"],
-        Integrations: ["REST APIs", "Salesforce", "Stripe", "Apple Pay", "Google Pay", "Carriers"],
-        Automation: ["Selenium", "Data processing", "Internal tooling", "Reporting"],
-        AI: ["AI APIs", "Content generation", "Translation", "Classification"],
+        Backend: ["Ruby on Rails", "PostgreSQL", "Redis"],
+        Integrations: ["REST APIs", "Salesforce", "Payments", "Carriers"],
+        Operations: ["Internal tools", "Reporting", "Data workflows"],
+        "Applied AI": ["AI APIs", "Translation", "Classification"],
       },
     },
     rates: {
       eyebrow: "Availability",
       title: "Available for clearly scoped work",
       lead:
-        "Available for scoped freelance projects, technical consulting and ongoing support across backend systems, integrations, ecommerce operations and business automation.",
+        "Available for scoped freelance projects, technical consulting and ongoing support across backend systems, integrations, ecommerce operations and automation.",
       items: [
         {
           title: "Discuss a project",
           range: "Defined scope",
           body:
-            "Integrations, automations, internal tools or backend improvements with clear goals and deliverables.",
+            "Integrations, automations or backend improvements with clear goals and deliverables.",
         },
         {
           title: "Book a technical consultation",
@@ -786,7 +782,7 @@ export const content = {
             "Evolutionary maintenance, reliability improvements and support for systems that connect critical business processes.",
         },
         {
-          title: "Solve an integration problem",
+          title: "Fix an integration issue",
           range: "Specific blockers",
           body:
             "Help unblocking APIs, Salesforce, payments, logistics, data flows or automations that affect operations.",
@@ -804,26 +800,26 @@ export const content = {
       {
         title: "Business Automation",
         summary:
-          "Turn repetitive operational work into dependable tools, synchronizations and background processes.",
+          "Automate operational tasks, synchronizations and internal processes that need to run reliably.",
         points: ["Internal tools for sales, support and operations.", "Data processing, reporting and synchronization.", "Automated workflows for ecommerce and SaaS teams."],
       },
       {
         title: "Ecommerce Systems Engineering",
         summary:
-          "Support the backend mechanics behind international ecommerce operations.",
+          "Improve the flows that keep international ecommerce operations moving.",
         points: ["Catalog, stock and price synchronization.", "Checkout, payments, orders and logistics flows.", "Operational tools for high-volume commerce."],
       },
       {
         title: "Applied AI Automation",
         summary:
-          "Integrate AI where it improves operations, content workflows, translation, classification or internal assistance.",
+          "Apply AI where it improves processes, content, translation, classification or internal assistance.",
         points: ["AI API integrations inside existing systems.", "Automated content generation and multilingual workflows.", "Human-reviewed automation for business processes."],
       },
       {
         title: "Ruby on Rails Development",
         summary:
-          "Design, build and improve Rails applications as the main technical stack for maintainable backend work.",
-        points: ["New Rails features and backend workflows.", "Legacy Rails maintenance and modernization.", "Performance, reliability and production support."],
+          "Build and maintain Ruby on Rails applications when the backend needs to be reliable and evolvable.",
+        points: ["New backend features and workflows.", "Maintenance and modernization of existing applications.", "Performance, reliability and production support."],
       },
       {
         title: "Technical Consulting",
