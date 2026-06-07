@@ -54,6 +54,8 @@ const alternateEn = routes.en[page];
       (() => {
         const buttons = document.querySelectorAll("[data-theme-toggle]");
         const labels = document.querySelectorAll("[data-theme-label]");
+        const mobileMenuToggle = document.querySelector("[data-mobile-menu-toggle]");
+        const mobileMenu = document.querySelector("[data-mobile-menu]");
         const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
         const applyTheme = (theme) => {
@@ -74,6 +76,29 @@ const alternateEn = routes.en[page];
             localStorage.setItem("theme", next);
             applyTheme(next);
           });
+        });
+
+        const setMobileMenu = (isOpen) => {
+          if (!mobileMenuToggle || !mobileMenu) return;
+          mobileMenuToggle.setAttribute("aria-expanded", String(isOpen));
+          mobileMenu.hidden = !isOpen;
+        };
+
+        mobileMenuToggle?.addEventListener("click", () => {
+          const isOpen = mobileMenuToggle.getAttribute("aria-expanded") === "true";
+          setMobileMenu(!isOpen);
+        });
+
+        mobileMenu?.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => setMobileMenu(false));
+        });
+
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") setMobileMenu(false);
+        });
+
+        window.addEventListener("resize", () => {
+          if (window.matchMedia("(min-width: 941px)").matches) setMobileMenu(false);
         });
 
         mediaQuery.addEventListener("change", () => {
