@@ -47,5 +47,47 @@ const navItems: NavKey[] = ["about", "projects", "services", "contact"];
       </button>
       <a class="button button-primary nav-cta" href={pathFor(locale, "contact")}>{t.nav.cta}</a>
     </div>
+
+    <button
+      class="mobile-menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-navigation"
+      aria-label={t.nav.menu}
+      data-mobile-menu-toggle
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="mobile-menu" id="mobile-navigation" data-mobile-menu hidden>
+      <div class="mobile-menu-links">
+        {
+          navItems.map((item) => (
+            <a class:list={["nav-link", page === item && "is-active"]} href={pathFor(locale, item)}>
+              {t.nav[item]}
+            </a>
+          ))
+        }
+      </div>
+
+      <div class="mobile-menu-actions">
+        <div class="locale-switch" aria-label={t.nav.language}>
+          {
+            locales.map((item) => (
+              <a class:list={[locale === item && "is-active"]} href={routes[item][page]}>
+                {item.toUpperCase()}
+              </a>
+            ))
+          }
+        </div>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+          <span data-theme-label>Dark</span>
+        </button>
+      </div>
+
+      <a class="button button-primary mobile-menu-cta" href={pathFor(locale, "contact")}>{t.nav.cta}</a>
+    </div>
   </nav>
 </header>

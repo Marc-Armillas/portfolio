@@ -350,6 +350,7 @@ export const content = {
       contact: "Contacto",
       cta: "Agendar una consulta técnica",
       language: "Idioma",
+      menu: "Menú de navegación",
       primary: "Navegacion principal",
     },
     footer: {
@@ -708,6 +709,7 @@ export const content = {
       contact: "Contact",
       cta: "Book a technical consultation",
       language: "Language",
+      menu: "Navigation menu",
       primary: "Primary navigation",
     },
     footer: {
