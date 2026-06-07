@@ -32,6 +32,32 @@ const t = content[locale];
   <section class="section split-band">
     <div class="container section-header">
       <div>
+        <p class="eyebrow">{t.about.experienceEyebrow}</p>
+        <h2>{t.about.experienceTitle}</h2>
+        <p>{t.about.experienceLead}</p>
+      </div>
+    </div>
+    <div class="container experience-list">
+      {t.about.experienceItems.map((item) => (
+        <article class="experience-card">
+          <div class="experience-meta">
+            <p class="eyebrow">{item.period}</p>
+            <h3>{item.company}</h3>
+            <strong>{item.role}</strong>
+          </div>
+          <div>
+            <p>{item.summary}</p>
+            <ul class="feature-list">{item.points.map((point) => <li>{point}</li>)}</ul>
+            <p class="experience-contribution">{item.contribution}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container section-header">
+      <div>
         <p class="eyebrow">{t.about.problemsEyebrow}</p>
         <h2>{t.about.problemsTitle}</h2>
       </div>

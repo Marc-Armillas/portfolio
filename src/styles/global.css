@@ -265,6 +265,7 @@ h3 {
 .credibility-panel,
 .card,
 .case-card,
+.experience-card,
 .service-card,
 .form-shell,
 .quote-panel {
@@ -324,7 +325,8 @@ h3 {
 .grid-2,
 .grid-3,
 .stack-grid,
-.case-grid {
+.case-grid,
+.experience-list {
   display: grid;
   gap: 18px;
 }
@@ -344,15 +346,39 @@ h3 {
 
 .card,
 .case-card,
+.experience-card,
 .service-card {
   padding: 24px;
 }
 
 .card p,
 .case-card p,
+.experience-card p,
 .service-card p,
 .quote-panel p {
   color: var(--muted);
+}
+
+.experience-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.35fr) minmax(0, 1fr);
+  gap: 28px;
+  box-shadow: none;
+}
+
+.experience-meta strong,
+.experience-contribution {
+  display: block;
+}
+
+.experience-meta strong {
+  margin-top: 12px;
+}
+
+.experience-contribution {
+  margin: 20px 0 0;
+  color: var(--text);
+  font-weight: 700;
 }
 
 .case-card {
@@ -539,6 +565,7 @@ textarea {
   .grid-3,
   .stack-grid,
   .case-grid,
+  .experience-card,
   .footer-grid {
     grid-template-columns: 1fr;
   }
